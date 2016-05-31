@@ -6,17 +6,15 @@ import javax.xml.soap.Text;
  * Created by quangdung on 30/05/2016.
  */
 public class Product {
-    public Product(Integer id, String title, String description, Text content) {
+    public Product(Integer id, String title, String description) {
         this.id = id;
         this.title = title;
         this.description = description;
-        this.content = content;
     }
 
     private Integer id;
     private String title;
     private String description;
-    private Text content;
 
     public Integer getId() {
         return id;
@@ -40,13 +38,5 @@ public class Product {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public Text getContent() {
-        return content;
-    }
-
-    public void setContent(Text content) {
-        this.content = content;
     }
 }
